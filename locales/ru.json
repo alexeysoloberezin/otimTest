@@ -1,0 +1,28 @@
+{
+  "Articles": {
+    "title": "Статьи"
+  },
+  "Header": {
+    "Works": "Работы",
+    "About": "О нас"
+  },
+
+  "Contacts": {
+    "For all questions": "По всем вопросам",
+    "email": "qtim@agency.com",
+    "phone": "+7 (920) 278—00—68",
+    "Office in Russia": "Офис в России",
+    "address_ru": "139 Ruben Station Lake Drew, NM 52678",
+    "Office in Dubai": "Офис в Дубае",
+    "address_du": "139 Ruben Station Lake Drew, NM 52678"
+  },
+
+  "Is there a project?": "Есть проект?",
+  "Let’s work together": "Давайте работать вместе",
+  "Go": "Перейти",
+  "Let’s work": "Работать",
+  "Read more": "Читать далее",
+  "About": "О нас",
+  "Loading": "Загрузка...",
+  "Error_request": "Ошибка запроса"
+}

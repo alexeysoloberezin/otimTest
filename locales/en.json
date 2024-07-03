@@ -4,11 +4,8 @@
   },
   "Header": {
     "Works": "Works",
-    "About": "About",
+    "About": "About"
   },
-
-  "Is there a project?": "Is there a project?",
-  "Let’s work together": "Let’s work together",
 
   "Contacts": {
     "For all questions": "For all questions",
@@ -17,11 +14,15 @@
     "Office in Russia": "Office in Russia",
     "address_ru": "139 Ruben Station Lake Drew, NM 52678",
     "Office in Dubai": "Office in Dubai",
-    "address_du": "Office in Dubai"
+    "address_du": "139 Ruben Station Lake Drew, NM 52678"
   },
 
-  "Actions": {
-    "Go": "Go",
-    "Let’s work": "Let’s work"
-  }
+  "Is there a project?": "Is there a project?",
+  "Let’s work together": "Let’s work together",
+  "Go": "Go",
+  "Let’s work": "Let’s work",
+  "Read more": "Read more",
+  "About": "About",
+  "Loading": "Loading...",
+  "Error_request": "Error Request"
 }
