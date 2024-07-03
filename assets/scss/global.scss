@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "vars";
+@import "fonts";
+@import "components";
+
+*{
+  font-family: $font1;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

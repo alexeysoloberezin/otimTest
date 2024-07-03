@@ -1,0 +1,27 @@
+{
+  "Articles": {
+    "title": "Articles"
+  },
+  "Header": {
+    "Works": "Works",
+    "About": "About",
+  },
+
+  "Is there a project?": "Is there a project?",
+  "Let’s work together": "Let’s work together",
+
+  "Contacts": {
+    "For all questions": "For all questions",
+    "email": "qtim@agency.com",
+    "phone": "+7 (920) 278—00—68",
+    "Office in Russia": "Office in Russia",
+    "address_ru": "139 Ruben Station Lake Drew, NM 52678",
+    "Office in Dubai": "Office in Dubai",
+    "address_du": "Office in Dubai"
+  },
+
+  "Actions": {
+    "Go": "Go",
+    "Let’s work": "Let’s work"
+  }
+}
