@@ -1,6 +1,8 @@
 <template>
   <div>
-    <Loader v-if="pending"></Loader>
+    <div class="container py-3">
+      <Loader v-if="pending"></Loader>
+    </div>
     <Section
         v-else-if="status === 'success' && post"
         :title="post.title"
