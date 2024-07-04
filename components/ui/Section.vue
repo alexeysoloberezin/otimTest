@@ -1,6 +1,6 @@
 <template>
-  <div class="container pb-[120px]">
-    <div class="mt-[120px] mb-[60px] "
+  <div class="container md:pb-[120px] pb-[50px]">
+    <div class="mt-[50px] md:mt-[120px] md:mb-[60px] mb-[25px] "
       :class="{'section-with-preview': !!preview}"
     >
       <h1 class="title">{{ title }}</h1>
@@ -20,10 +20,15 @@ const props = defineProps<{
 }>()
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .section-with-preview{
   display: grid;
   grid-template-columns: 1.2fr 1fr;
   gap: 50px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
 }
 </style>

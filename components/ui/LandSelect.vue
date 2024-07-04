@@ -1,12 +1,12 @@
 <template>
-  <div @click="isOpen = !isOpen" class="relative w-[52px] h-[52px]">
+  <div @click="isOpen = !isOpen" class="relative sm:w-[52px] w-[40px] h-[40px] sm:h-[52px]">
     <div class="w-full h-full flex flex-col items-center justify-center border-2 border-[#0000001A] hover:border-[#0000003A] cursor-pointer rounded-full">
-      <component :is="locales[locale]" />
+      <component :is="locales[locale]" class="sm:max-w-[16px] max-w-[24px]" />
     </div>
 
-    <div v-if="isOpen" class="flex flex-col items-center z-10 border-2 w-[52px] rounded-full py-1 border-[#0000001A] absolute top-[58px] bg-white left-0">
+    <div v-if="isOpen" class="flex flex-col items-center z-10 border-2 sm:w-[52px] w-[40px] rounded-full py-1 border-[#0000001A] absolute sm:top-[58px] top-[45px] bg-white left-0">
       <div v-for="(item, key) in filteredLocales" @click="changeLocale(item)" :key="key" class="flex items-center hover:border-gray cursor-pointer rounded-full p-2">
-        <component :is="locales[item]" />
+        <component :is="locales[item]" class="sm:max-w-[16px] max-w-[24px]"/>
       </div>
     </div>
   </div>

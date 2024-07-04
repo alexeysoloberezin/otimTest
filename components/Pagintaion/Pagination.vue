@@ -15,7 +15,7 @@
       <li v-for="el in visiblePages" :key="el" @click="$emit('update:setPage', el)">
         <div
             :class="['pag-btn', 'pag-btn-base',{ 'active': el === currentPage }]"
-            >
+        >
           {{ el }}
         </div>
       </li>
@@ -43,7 +43,7 @@ const props = defineProps<{
 const emit = defineEmits(['update:prevPage', 'update:setPage', 'update:nextPage'])
 
 const visiblePages = computed(() => {
-  const { totalPages, currentPage } = props
+  const {totalPages, currentPage} = props
   const pages = []
 
   const startPage = Math.max(currentPage - 2, 1)
@@ -58,24 +58,25 @@ const visiblePages = computed(() => {
 </script>
 
 <style scoped lang="scss">
-.pag-btn-base{
-  @apply flex items-center justify-center px-4 h-10 w-[44px] h-[44px] rounded-lg hover:transition cursor-pointer;
+.pag-btn-base {
+  @apply flex items-center justify-center px-4 h-10 sm:w-[44px] sm:h-[44px] w-[34px] h-[34px] sm:text-base text-sm sm:py-0 pt-0.5  px-3 rounded-lg hover:transition cursor-pointer;
 }
 
-.pag-btn{
+.pag-btn {
   @apply bg-light hover:bg-dark hover:text-white;
-  &:not(.active){
+  &:not(.active) {
     @apply bg-light hover:text-white hover:bg-gray;
   }
-  &.active{
+
+  &.active {
     @apply text-white bg-dark;
   }
 }
 
 
-.pag-btn-nextPrev{
+.pag-btn-nextPrev {
   @apply border border-light hover:border-gray;
-  svg{
+  svg {
     flex-shrink: 0;
     opacity: 0.2;
     transform: scale(0.8);

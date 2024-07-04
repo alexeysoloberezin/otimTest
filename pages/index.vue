@@ -5,11 +5,11 @@
     >
       <Loader v-if="pending"></Loader>
       <PaginationBox
-          v-else
+          v-else-if="status === 'success'"
           :items="posts"
       >
         <template v-slot="{ items }">
-          <div class="xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1  grid gap-8">
+          <div class="xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1  grid md:gap-8 gap-4">
             <NuxtLink
                 v-for="post in items"
                 :key="post.id"
@@ -54,7 +54,7 @@ interface Post {
   description: string;
 }
 
-const {pending, data: posts}: { pending: boolean; data: Post[] | []; status: string }
+const {pending, data: posts, status}: { pending: boolean; data: Post[] | []; status: string }
     = useApi('/posts', {
   method: 'get'
 });

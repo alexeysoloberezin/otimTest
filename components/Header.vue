@@ -1,12 +1,12 @@
 <template>
-  <div class="flex items-center max-w-[1440px] mx-auto py-[35px] px-3">
+  <div class="flex items-center max-w-[1440px] mx-auto md:py-[35px] py-3 sm:px-3 px-1.5">
     <NuxtLink to="/">
       <Logo />
     </NuxtLink>
 
-    <Navigation class="mr-[91px] ml-auto"/>
+    <Navigation class="md:mr-[91px] sm:mr-5 mr-2 ml-auto"/>
 
-    <LandSelect class="mr-3"/>
+    <LandSelect class="sm:mr-3 mr-2"/>
 
     <NuxtLink to="/">
       <Button >

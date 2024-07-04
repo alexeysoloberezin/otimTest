@@ -1,9 +1,9 @@
 <template>
   <div>
     <nav>
-      <ul class="flex items-center gap-[58px]">
+      <ul class="flex items-center md:gap-[58px] sm:gap-5 gap-2">
         <li v-for="el in navigationList" :key="el.name">
-          <NuxtLink :to="el.link" class="text-base">{{ $t(el.name) }}</NuxtLink>
+          <NuxtLink :to="el.link" class="md:text-base text-sm">{{ $t(el.name) }}</NuxtLink>
         </li>
       </ul>
     </nav>

@@ -9,7 +9,7 @@
       <img v-if="post.image" :src="post.image" alt="">
       <div class="max-w-[695px]">
         <p class="text-sm">{{ $t('About') }}</p>
-        <p class="text-3xl mt-[32px]">{{ post.description }}</p>
+        <p class="md:text-3xl sm:text-xl text-md md:mt-[32px] mt-[16px]">{{ post.description }}</p>
       </div>
     </Section>
     <div v-else class="text-red">{{ $t('Error_request') }}</div>

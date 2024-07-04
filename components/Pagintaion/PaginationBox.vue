@@ -3,7 +3,7 @@
     <slot :items="elements"></slot>
 
     <Pagination
-        class="mt-[50px]"
+        class="md:mt-[50px] mt-[30px]"
         :currentPage="currentPage"
         :totalPages="totalPages"
         @update:setPage="setPage"
