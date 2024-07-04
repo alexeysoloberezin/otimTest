@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="container py-3">
-      <Loader v-if="pending"></Loader>
+    <div v-if="pending" class="container py-3">
+      <Loader ></Loader>
     </div>
     <Section
         v-else-if="status === 'success' && post"
